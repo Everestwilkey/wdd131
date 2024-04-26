@@ -1,51 +1,48 @@
-body{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    line-height: 1.5;
+body {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  line-height: 1.5;
+  border: solid black 1px;
 }
-#subtitle{
-    color:#006EB6;
+#subtitle {
+  color: #006eb6;
 }
-header.title{
-    text-align: center;
-    
+header.title {
+  text-align: center;
 }
-#title{
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 0;
-    
+#title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
 }
-#subtitle{
-margin: 0;
-letter-spacing: 5px;
-text-transform: uppercase;
-font-size: 15px;
+#subtitle {
+  margin: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
 }
-main.content{
-    text-align: left;
+main.content {
+  text-align: left;
 }
-div.info{
-    padding: 50px;
-    max-width: 600px;
-    margin: auto;
-
+div.info {
+  padding: 50px;
+  max-width: 600px;
+  margin: auto;
 }
-#listtitle{
-    font-style: italic;
+#listtitle {
+  font-style: italic;
 }
-li{
-    padding: 7px;
-
+li {
+  padding: 7px;
 }
-img{
-    width: 150px;
+img {
+  width: 150px;
 }
-footer{
-    padding: 10px;
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+footer {
+  padding: 10px;
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
