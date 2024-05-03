@@ -46,6 +46,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+select{
+    margin: auto;
+}
 .dark {
   background-color: #333;
   color: white;
@@ -53,5 +56,5 @@ footer {
 }
 
 .dark #subtitle {
-  color: #5fbfff;
+  color: #006EB6;
 }
