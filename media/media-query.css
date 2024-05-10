@@ -1,0 +1,48 @@
+/* Sets the basic font properties for elements with class .roboto-regular */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Sets the default font family for all text in the body */
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Common styles for header, main, and footer */
+  header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* faint border */
+    padding: 1rem;
+    background-color: #e6f4ff; /* a light bluish color */
+  }
+  
+  /* Styles specific to main for layout */
+  main {
+    display: grid;
+    grid-template-columns: 1fr; /* Sets the column structure for the grid */
+  }
+  
+  /* Styles for section elements */
+  section {
+    padding: 5px;
+    background-color: white;
+  }
+  
+  /* Media query that applies for viewports that are 500px wide or larger */
+  @media screen and (min-width: 500px) {
+    /* Changes for header when the viewport is at least 500px wide */
+    header {
+      background-color: #000; /* black background */
+      color: #fff; /* white text */
+    }
+  
+    /* Changes for section when the viewport is at least 500px wide */
+    main {
+        display: grid;
+      grid-template-columns: 1fr 1fr; /* Splits the section into two columns */
+    }
+  }
+  

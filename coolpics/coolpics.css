@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Mooli, san-serif;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 0.25em var(--text-light) solid;
+}
+
+html,
+body {
+  height: 100%; /* Full height for the body to align with viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex; /* Flex container for vertical layout */
+  flex-direction: column; /* Stacks children vertically */
+  width: 100%;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding-bottom: 1em;
+}
+
+header h1 {
+  padding-bottom: 0.25em;
+  margin: 0;
+  color: var(--text-light);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-gap: 0.7em;
+}
+
+nav ul li:first-child {
+  grid-column-start: 2;
+}
+
+nav ul li a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: var(--accent-color);
+}
+button {
+  display: none;
+}
+main {
+  color: rgb(148, 148, 148);
+  flex: 1; /* Takes available space, pushing footer to bottom */
+  overflow: auto; /* Adds scroll bar to main if content exceeds */
+}
+
+main h2 {
+  color: var(--text-dark);
+  font-family: var(--secondary-font);
+}
+
+.gallery {
+  display: grid;
+  padding: 0 20vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+figure {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  padding: 1.5em 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-gap: 0.7em;
+  background-color: var(--primary-color);
+  text-align: left;
+}
+
+footer p {
+  color: var(--text-light);
+  margin: 0;
+  grid-column: 2/5;
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    display: block;
+  }
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+  nav ul li:first-child {
+    grid-column-start: 1;
+  }
+  button {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: var(--text-light);
+    border: none;
+    padding: 0.2em 0;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
