@@ -68,7 +68,7 @@ nav ul li a {
 nav ul li a:visited {
   color: var(--accent-color);
 }
-button {
+#menubutton {
   display: none;
 }
 main {
@@ -100,6 +100,38 @@ footer {
   grid-gap: 0.7em;
   background-color: var(--primary-color);
   text-align: left;
+
+.viewer {
+  margin: 3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+}
+
+.viewer img {
+  max-width: 80vw;
+  max-height: 80vh;
+  padding-bottom: 20px;
+  object-fit: contain;
+  border: none;
+  width: 60%;
+}
+
+
+.close-viewer{
+  font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    
+  margin-left: 55%;
+  
 }
 
 footer p {
@@ -108,7 +140,18 @@ footer p {
   grid-column: 2/5;
 }
 
-@media only screen and (max-width: 650px) {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
   body {
     display: block;
   }
@@ -118,7 +161,7 @@ footer p {
   nav ul li:first-child {
     grid-column-start: 1;
   }
-  button {
+  #menubutton {
     display: inline-block;
     background-color: transparent;
     font-size: 1.2em;
@@ -128,5 +171,47 @@ footer p {
   }
   .gallery {
     grid-template-columns: 1fr;
+  }
+  .hidden{
+    display: none;
+  }
+  .viewer {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-items: center;
+    color: white; /* To make the X visible */
+    z-index: 1000; 
+    grid-template-rows: 1fr  2fr 1fr;
+    display: grid;/* Ensure it's on top */
+  }
+
+
+  .close-viewer {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    align-self:end;
+    justify-self: end;
+    padding-right: 5vw;
+  }
+  
+  .viewer img {
+    max-height: 150%;
+    max-width: 150%;
+    width: auto;
+   
+    border: none;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 1/2;
   }
 }
