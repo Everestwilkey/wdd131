@@ -68,9 +68,7 @@ nav ul li a {
 nav ul li a:visited {
   color: var(--accent-color);
 }
-#menubutton {
-  display: none;
-}
+
 main {
   color: rgb(148, 148, 148);
   flex: 1; /* Takes available space, pushing footer to bottom */
@@ -100,6 +98,7 @@ footer {
   grid-gap: 0.7em;
   background-color: var(--primary-color);
   text-align: left;
+}
 
 .viewer {
   margin: 3em;
@@ -112,26 +111,26 @@ footer {
   display: grid;
   place-items: center;
 }
-
+.display {
+  display: none;
+}
 .viewer img {
   max-width: 80vw;
-  max-height: 80vh;
+  max-height: 70vh;
   padding-bottom: 20px;
   object-fit: contain;
   border: none;
-  width: 60%;
+  width: 70%;
 }
 
-
-.close-viewer{
+.close-viewer {
   font-size: 2rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    
-  margin-left: 55%;
-  
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+
+  margin-left: 70%;
 }
 
 footer p {
@@ -140,16 +139,13 @@ footer p {
   grid-column: 2/5;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
 }
-
-
-
-
 
 @media only screen and (max-width: 1000px) {
   body {
@@ -161,7 +157,7 @@ html, body {
   nav ul li:first-child {
     grid-column-start: 1;
   }
-  #menubutton {
+  .menubutton {
     display: inline-block;
     background-color: transparent;
     font-size: 1.2em;
@@ -172,7 +168,7 @@ html, body {
   .gallery {
     grid-template-columns: 1fr;
   }
-  .hidden{
+  .hidden {
     display: none;
   }
   .viewer {
@@ -186,11 +182,9 @@ html, body {
     align-items: center;
     justify-items: center;
     color: white; /* To make the X visible */
-    z-index: 1000; 
-    grid-template-rows: 1fr  2fr 1fr;
-    display: grid;/* Ensure it's on top */
+    z-index: 1000;
+    grid-template-rows: 1fr 2fr 1fr;
   }
-
 
   .close-viewer {
     font-size: 2rem;
@@ -198,16 +192,14 @@ html, body {
     background: none;
     border: none;
     color: white;
-    align-self:end;
+    align-self: end;
     justify-self: end;
     padding-right: 5vw;
   }
-  
+
   .viewer img {
-    max-height: 150%;
-    max-width: 150%;
     width: auto;
-   
+
     border: none;
     justify-self: center;
     align-self: center;
