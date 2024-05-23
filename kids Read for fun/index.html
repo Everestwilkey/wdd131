@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Read for Fun</title>
+    <meta name="description" content="This is a website recreating the Kids Read for Fun website." />
+    <meta name="Author" content="Everest Wilkey" />
+    <link rel="stylesheet" href="KRF.css" />
+    <script src="KRF.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kids Read for Fun</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#archive">Archive</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="book-list" id="book-container"></div>
+            <aside class="filters">
+                <form>
+                    <label for="sort">Sort:</label>
+                    <select id="sort">
+                        <option value="date">Date</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                    <label for="age">Age:</label>
+                    <select id="age">
+                        <option value="all">All</option>
+                        <option value="10-14">10-14</option>
+                        <option value="12-16">12-16</option>
+                    </select>
+                    <label for="genre">Genre:</label>
+                    <select id="genre">
+                        <option value="all">All</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="all">All</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </form>
+            </aside>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
