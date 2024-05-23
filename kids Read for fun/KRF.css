@@ -23,10 +23,10 @@ header h1 {
 
 .nav-bar {
   list-style: none;
-  padding: 0;
+  padding: 0px 25px;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 20px;
 }
 
