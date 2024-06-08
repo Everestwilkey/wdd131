@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Form</title>
@@ -19,17 +20,18 @@
           <input
             type="text"
             id="card-number"
-            placeholder="1234 5678 9101 1020" />
+            placeholder="1234 5678 9101 1020"
+            required />
         </div>
         <div class="input-group-name">
           <label for="card-holder">CARD HOLDER</label>
-          <input type="text" id="card-holder" placeholder="John Doe" />
+          <input type="text" id="card-holder" placeholder="John Doe" required />
         </div>
         <div class="expiration-group">
           <label for="expiration-mm">EXPIRATION</label>
           <div class="expiration">
-            <input type="text" id="expiration-mm" placeholder="MM" />
-            <input type="text" id="expiration-yy" placeholder="YY" />
+            <input type="text" id="expiration-mm" placeholder="MM" required />
+            <input type="text" id="expiration-yy" placeholder="YY" required />
           </div>
         </div>
       </div>
