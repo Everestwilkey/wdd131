@@ -102,7 +102,10 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
+.search-img{
+  max-width: 20px;
+  max-height: 20px;
+}
 .social img {
   width: 30px;
   height: auto;

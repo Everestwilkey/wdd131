@@ -50,7 +50,7 @@ function renderRecipes(recipeList) {
       <form>
         <input type="text" placeholder="Find a recipe" />
         <button type="submit">
-          <img src="images/search-icon.png" alt="Search Icon" />
+          <img class="search-img" src="images/search.svg" alt="Search Icon" />
         </button>
       </form>`;
     output.innerHTML += recipeList.map(recipe => recipeTemplate(recipe)).join('');
