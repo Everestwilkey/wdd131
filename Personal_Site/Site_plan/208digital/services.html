@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>208 Digital - Services</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="208 Digital helps small businesses establish a strong online presence. Specializing in custom web design, development, and SEO to grow your business.">
+    <meta name="keywords" content="208 Digital, web design, web development, SEO, online presence, small business">
+    <meta name="author" content="Everest wilkey">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="208 Digital - Services">
+    <meta property="og:description" content="Helping small businesses establish a strong online presence. Specializing in custom web design, development, and SEO.">
+    <meta property="og:image" content="assets/web_resized.webp">
+    <meta property="og:url" content="https://yourwebsite.com/services.html">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="208 Digital - Services">
+    <meta name="twitter:description" content="Helping small businesses establish a strong online presence. Specializing in custom web design, development, and SEO.">
+    <meta name="twitter:image" content="assets/web_resized.webp">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <!-- Preload and Preconnect -->
+    <link rel="preload" href="styles/services.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="assets/logo.webp" as="image">
+    <link rel="preload" href="assets/web_resized.webp" as="image">
+    <link rel="preload" href="assets/design_resized.webp" as="image">
+    <link rel="preload" href="assets/business_resized.webp" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.webp" alt="208 Digital Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="filter-container">
+                <h2>Our Services</h2>
+                <input type="text" id="filter-input" placeholder="Search services...">
+            </div>
+            <div class="service-list">
+                <!-- Services will be rendered here -->
+            </div>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us at: <a href="mailto:contact@208digital.com">contact@208digital.com</a></p>
+            <p>Follow us on social media: 
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
